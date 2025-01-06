@@ -1,0 +1,31 @@
+.restaurant-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .restaurant-list h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  .restaurant-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .restaurant-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .restaurant-list li h2 {
+    color: #333;
+  }
+  
+  .restaurant-list li p {
+    color: #777;
+  }
+  

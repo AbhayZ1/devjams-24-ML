@@ -1,0 +1,29 @@
+.restaurant-details {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .restaurant-details h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  .restaurant-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .restaurant-details li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .restaurant-details li span {
+    color: #333;
+  }
+  
