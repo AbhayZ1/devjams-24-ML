@@ -10,7 +10,7 @@ const RestaurantList = () => {
 
   return (
     <div className="restaurant-list">
-      <h1>Explore Canteens</h1>
+      <h1 className="header">Explore Canteens</h1>
       <ul>
         {canteens.map((canteen, index) => (
           <li key={index}>

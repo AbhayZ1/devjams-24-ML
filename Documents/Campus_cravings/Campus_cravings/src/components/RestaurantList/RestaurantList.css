@@ -1,6 +1,10 @@
 .restaurant-list {
     padding: 20px;
     font-family: Arial, sans-serif;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background to show the blur */
+    backdrop-filter: blur(10px);
+    border-radius: 30px; 
+    padding: 20px;
   }
   
   .restaurant-list h1 {
@@ -12,7 +16,9 @@
     list-style: none;
     padding: 0;
   }
-  
+  .header{
+    color: whitesmoke;
+  }
   .restaurant-list li {
     border: 1px solid #ccc;
     border-radius: 5px;

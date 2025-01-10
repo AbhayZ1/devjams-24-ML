@@ -5,116 +5,33 @@ import RestaurantList from "./components/RestaurantList/RestaurantList.jsx";
 import RestaurantDetails from "./components/RestaurantDetails/RestaurantDetails.jsx";
 import UserSuggestions from "./components/UserSuggestions/UserSuggestions.jsx";
 import AddPlace from "./components/AddPlace/AddPlace.jsx";
+import "./App.css"; // External CSS file for styling
 
 const App = () => {
-  const appStyles = {
-    fontFamily: "'Arial', sans-serif",
-    textAlign: "center",
-    margin: "0",
-    padding: "0",
-    height: "100vh",
-    width: "100vw",
-    display: "flex",
-    flexDirection: "column",
-    background: "linear-gradient(135deg, #4caf50, #81c784, #2196f3)",
-    animation: "backgroundAnimation 10s infinite alternate",
-    overflow: "hidden",
-  };
-
-  const navbarStyles = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#333",
-    padding: "15px 0",
-    position: "sticky",
-    top: "0",
-    zIndex: "10",
-    width: "100%",
-  };
-
-  const linkStyles = {
-    color: "white",
-    textDecoration: "none",
-    margin: "0 15px",
-    fontSize: "18px",
-    transition: "color 0.3s ease, transform 0.3s ease",
-  };
-
-  const containerStyles = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-  };
-
   return (
-    <div style={appStyles}>
-      <style>
-        {`
-          @keyframes backgroundAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-          }
-          body {
-            margin: 0;
-            overflow: hidden;
-          }
-          a:hover {
-            transform: scale(1.1);
-          }
-        `}
-      </style>
-
+    <div className="app">
       <Router>
         {/* Navbar */}
-        <nav style={navbarStyles}>
-          <Link
-            to="/"
-            style={linkStyles}
-            onMouseOver={(e) => (e.target.style.color = "#81c784")}
-            onMouseOut={(e) => (e.target.style.color = "white")}
-          >
+        <nav className="navbar">
+          <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link
-            to="/restaurants"
-            style={linkStyles}
-            onMouseOver={(e) => (e.target.style.color = "#81c784")}
-            onMouseOut={(e) => (e.target.style.color = "white")}
-          >
+          <Link to="/restaurants" className="nav-link">
             Restaurants
           </Link>
-          <Link
-            to="/details"
-            style={linkStyles}
-            onMouseOver={(e) => (e.target.style.color = "#81c784")}
-            onMouseOut={(e) => (e.target.style.color = "white")}
-          >
+          <Link to="/details" className="nav-link">
             Details
           </Link>
-          <Link
-            to="/suggestions"
-            style={linkStyles}
-            onMouseOver={(e) => (e.target.style.color = "#81c784")}
-            onMouseOut={(e) => (e.target.style.color = "white")}
-          >
+          <Link to="/suggestions" className="nav-link">
             Suggestions
           </Link>
-          <Link
-            to="/add-place"
-            style={linkStyles}
-            onMouseOver={(e) => (e.target.style.color = "#81c784")}
-            onMouseOut={(e) => (e.target.style.color = "white")}
-          >
+          <Link to="/add-place" className="nav-link">
             Add Place
           </Link>
         </nav>
 
         {/* Routes */}
-        <div style={containerStyles}>
+        <div className="container">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/restaurants" element={<RestaurantList />} />

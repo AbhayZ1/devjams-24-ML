@@ -10,7 +10,9 @@ const RestaurantDetails = () => {
 
   return (
     <div className="restaurant-details">
+      <div className="header">
       <h1>H Block Canteen</h1>
+      </div>
       <h2>Menu</h2>
       <ul>
         {menu.map((item, index) => (

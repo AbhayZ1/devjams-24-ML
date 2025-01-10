@@ -22,7 +22,10 @@ const UserSuggestions = () => {
 
   return (
     <div className="user-suggestions">
+      <div className="header">
       <h1>Suggest the Best Food Item</h1>
+      </div>
+      
       <form onSubmit={handleSubmit}>
         <label>
           Location:

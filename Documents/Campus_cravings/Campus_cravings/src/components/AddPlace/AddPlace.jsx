@@ -23,7 +23,10 @@ const AddPlace = () => {
 
   return (
     <div className="add-place">
+      <div className="header">
+        
       <h1>Add a New Place or Dish</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <label>
           Place Name:
